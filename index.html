@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Valijonov Soyibjon — Premium Portfolio">
+  <title>VALIJONOV SOYIBJON — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">VS</div>
+    <div class="loader-line">
+      <span></span>
+    </div>
+    <p>LOADING EXPERIENCE...</p>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- BACKGROUND -->
+  <canvas id="particles"></canvas>
+
+  <div class="noise"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+
+      <a href="#home" class="brand">
+        <span class="brand-vs">VS</span>
+        <span>VALIJONOV<br><small>SOYIBJON</small></span>
+      </a>
+
+      <nav id="nav">
+        <a href="#home" class="active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">WORK</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="icon-btn">☼</button>
+        <button id="menuBtn" class="menu-btn">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero" id="home">
+
+      <div class="hero-grid container">
+
+        <div class="hero-left reveal">
+
+          <div class="availability">
+            <span></span>
+            AVAILABLE FOR CREATIVE PROJECTS
+          </div>
+
+          <div class="small-title">
+            DIGITAL CREATOR / WEB DEVELOPER
+          </div>
+
+          <h1>
+            VALIJONOV
+            <strong>SOYIBJON</strong>
+          </h1>
+
+          <div class="typing-wrapper">
+            I CREATE
+            <span id="typing"></span>
+            <i></i>
+          </div>
+
+          <p class="hero-text">
+            Zamonaviy web texnologiyalar, kreativ dizayn va kuchli
+            animatsiyalar yordamida oddiy g‘oyalarni unutilmas
+            digital tajribaga aylantiraman.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn magnetic">
+              <span>LOYIHALARNI KO‘RISH</span>
+              <b>↗</b>
+            </a>
+
+            <a href="#contact" class="btn btn-outline magnetic">
+              BOG‘LANISH
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="#" aria-label="Telegram">TG</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="GitHub">GH</a>
+          </div>
+
+        </div>
+
+        <!-- 3D VISUAL -->
+        <div class="hero-right reveal">
+
+          <div class="scene" id="scene">
+
+            <div class="ring ring-1"></div>
+            <div class="ring ring-2"></div>
+            <div class="ring ring-3"></div>
+
+            <div class="cube cube-1"></div>
+            <div class="cube cube-2"></div>
+            <div class="cube cube-3"></div>
+
+            <div class="profile-card">
+
+              <div class="card-glow"></div>
+
+              <div class="profile-top">
+                <span>01 / CREATOR</span>
+                <span>2026</span>
+              </div>
+
+              <div class="profile-logo">
+                VS
+              </div>
+
+              <div class="profile-name">
+                <span>VALIJONOV</span>
+                <strong>SOYIBJON</strong>
+              </div>
+
+              <div class="profile-bottom">
+                <span>WEB / DESIGN / CODE</span>
+                <span>UZ</span>
+              </div>
+
+            </div>
+
+            <div class="floating-info info-1">
+              <strong>∞</strong>
+              <span>CREATIVITY</span>
+            </div>
+
+            <div class="floating-info info-2">
+              <strong>24/7</strong>
+              <span>LEARNING</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-bottom container">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-line"></div>
+        <span>01 — 05</span>
+      </div>
+
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>WEB DEVELOPMENT</span>
+        <b>✦</b>
+        <span>CREATIVE DESIGN</span>
+        <b>✦</b>
+        <span>UI / UX</span>
+        <b>✦</b>
+        <span>JAVASCRIPT</span>
+        <b>✦</b>
+        <span>DIGITAL EXPERIENCE</span>
+        <b>✦</b>
+
+        <span>WEB DEVELOPMENT</span>
+        <b>✦</b>
+        <span>CREATIVE DESIGN</span>
+        <b>✦</b>
+        <span>UI / UX</span>
+        <b>✦</b>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+
+      <div class="section-label reveal">
+        <span>01</span>
+        ABOUT ME
+      </div>
+
+      <div class="about-layout">
+
+        <div class="about-title reveal">
+          <p>WHO I AM</p>
+          <h2>
+            G‘OYALARNI
+            <span>REALITY</span>
+            GA AYLANtiraman.
+          </h2>
+        </div>
+
+        <div class="about-content reveal">
+
+          <p class="large">
+            Men <strong>Valijonov Soyibjon</strong>. Web dasturlash,
+            zamonaviy dizayn va IT texnologiyalariga qiziqadigan
+            kreativ insonman.
+          </p>
+
+          <p>
+            Men uchun sayt faqat kodlardan iborat emas.
+            U foydalanuvchida taassurot qoldiradigan, qulay va
+            o‘ziga xos raqamli tajriba bo‘lishi kerak.
+          </p>
+
+          <a href="#contact" class="under-link">
+            MEN BILAN ISHLASH →
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="numbers">
+
+        <div class="number-card reveal">
+          <strong data-number="10">0</strong><span>+</span>
+          <p>PROJECT IDEAS</p>
+        </div>
+
+        <div class="number-card reveal">
+          <strong data-number="5">0</strong><span>+</span>
+          <p>TECHNOLOGIES</p>
+        </div>
+
+        <div class="number-card reveal">
+          <strong data-number="100">0</strong><span>%</span>
+          <p>CREATIVE ENERGY</p>
+        </div>
+
+        <div class="number-card reveal">
+          <strong>∞</strong>
+          <p>FUTURE POSSIBILITIES</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section dark-section" id="skills">
+
+      <div class="container">
+
+        <div class="section-label reveal">
+          <span>02</span>
+          EXPERTISE
+        </div>
+
+        <div class="skills-header reveal">
+          <h2>
+            MY
+            <span>SKILLS</span>
+          </h2>
+
+          <p>
+            Har kuni yangi texnologiya, yangi tajriba va yangi
+            imkoniyatlarni o‘rganaman.
+          </p>
+        </div>
+
+        <div class="skills-list">
+
+          <div class="skill reveal">
+            <div class="skill-head">
+              <span>01 / HTML</span>
+              <strong>95%</strong>
+            </div>
+            <div class="skill-track">
+              <i data-width="95%"></i>
+            </div>
+          </div>
+
+          <div class="skill reveal">
+            <div class="skill-head">
+              <span>02 / CSS</span>
+              <strong>92%</strong>
+            </div>
+            <div class="skill-track">
+              <i data-width="92%"></i>
+            </div>
+          </div>
+
+          <div class="skill reveal">
+            <div class="skill-head">
+              <span>03 / JAVASCRIPT</span>
+              <strong>85%</strong>
+            </div>
+            <div class="skill-track">
+              <i data-width="85%"></i>
+            </div>
+          </div>
+
+          <div class="skill reveal">
+            <div class="skill-head">
+              <span>04 / UI / UX</span>
+              <strong>88%</strong>
+            </div>
+            <div class="skill-track">
+              <i data-width="88%"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section container">
+
+      <div class="section-label reveal">
+        <span>03</span>
+        WHAT I DO
+      </div>
+
+      <div class="services">
+
+        <article class="service reveal">
+          <div class="service-number">01</div>
+          <div class="service-icon">◈</div>
+          <h3>WEB DEVELOPMENT</h3>
+          <p>
+            Zamonaviy, tezkor, responsive va professional
+            web saytlar yaratish.
+          </p>
+          <span>HTML / CSS / JS</span>
+        </article>
+
+        <article class="service reveal">
+          <div class="service-number">02</div>
+          <div class="service-icon">✦</div>
+          <h3>CREATIVE DESIGN</h3>
+          <p>
+            Brendga mos premium interfeys va kreativ
+            visual konsepsiyalar.
+          </p>
+          <span>UI / UX / MOTION</span>
+        </article>
+
+        <article class="service reveal">
+          <div class="service-number">03</div>
+          <div class="service-icon">⌘</div>
+          <h3>INTERACTIVE EXPERIENCE</h3>
+          <p>
+            Foydalanuvchini hayratga soladigan animatsiya
+            va interaktiv elementlar.
+          </p>
+          <span>JS / ANIMATION</span>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects-section" id="projects">
+
+      <div class="container">
+
+        <div class="section-label reveal">
+          <span>04</span>
+          SELECTED WORK
+        </div>
+
+        <div class="projects-heading reveal">
+          <h2>
+            SELECTED
+            <span>PROJECTS</span>
+          </h2>
+
+          <p>
+            Eng yaxshi loyihalarim va kreativ tajribalarim.
+          </p>
+        </div>
+
+        <div class="projects">
+
+          <article class="project reveal">
+
+            <div class="project-visual green">
+              <div class="browser">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span>yashilmakon.uz</span>
+                </div>
+
+                <div class="browser-content">
+                  <small>01 / ECO SYSTEM</small>
+                  <h3>YASHIL<br>MAKON</h3>
+                  <button>EXPLORE ↗</button>
+                </div>
+              </div>
+
+              <span class="project-number">01</span>
+            </div>
+
+            <div class="project-info">
+              <div>
+                <h3>Yashil Makon</h3>
+                <p>Ecological digital platform</p>
+              </div>
+
+              <a href="#contact">VIEW ↗</a>
+            </div>
+
+          </article>
+
+          <article class="project reveal">
+
+            <div class="project-visual purple">
+              <div class="browser">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span>creative.studio</span>
+                </div>
+
+                <div class="browser-content">
+                  <small>02 / CREATIVE</small>
+                  <h3>CREATIVE<br>STUDIO</h3>
+                  <button>DISCOVER ↗</button>
+                </div>
+              </div>
+
+              <span class="project-number">02</span>
+            </div>
+
+            <div class="project-info">
+              <div>
+                <h3>Creative Studio</h3>
+                <p>Premium creative website</p>
+              </div>
+
+              <a href="#contact">VIEW ↗</a>
+            </div>
+
+          </article>
+
+          <article class="project reveal">
+
+            <div class="project-visual blue">
+              <div class="browser">
+                <div class="browser-bar">
+                  <i></i><i></i><i></i>
+                  <span>digital.world</span>
+                </div>
+
+                <div class="browser-content">
+                  <small>03 / DIGITAL</small>
+                  <h3>DIGITAL<br>WORLD</h3>
+                  <button>ENTER ↗</button>
+                </div>
+              </div>
+
+              <span class="project-number">03</span>
+            </div>
+
+            <div class="project-info">
+              <div>
+                <h3>Digital World</h3>
+                <p>Modern technology platform</p>
+              </div>
+
+              <a href="#contact">VIEW ↗</a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CTA -->
+    <section class="cta container reveal">
+
+      <div class="cta-glow"></div>
+
+      <span>HAVE A PROJECT?</span>
+
+      <h2>
+        LET'S CREATE
+        <strong>SOMETHING GREAT.</strong>
+      </h2>
+
+      <a href="#contact" class="btn btn-white magnetic">
+        START A PROJECT ↗
+      </a>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container contact" id="contact">
+
+      <div class="section-label reveal">
+        <span>05</span>
+        CONTACT
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-title reveal">
+          <h2>
+            LET'S
+            <span>TALK.</span>
+          </h2>
+
+          <p>
+            Yangi loyiha, hamkorlik yoki shunchaki salomlashish
+            uchun yozishingiz mumkin.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="https://t.me/" target="_blank">
+              <span>TELEGRAM</span>
+              <strong>@your_username ↗</strong>
+            </a>
+
+            <a href="https://instagram.com/" target="_blank">
+              <span>INSTAGRAM</span>
+              <strong>@your_username ↗</strong>
+            </a>
+
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal">
+
+          <div class="input-group">
+            <label>ISMINGIZ</label>
+            <input id="name" type="text" placeholder="Ismingiz..." required>
+          </div>
+
+          <div class="input-group">
+            <label>EMAIL</label>
+            <input id="email" type="email" placeholder="email@example.com" required>
+          </div>
+
+          <div class="input-group">
+            <label>XABAR</label>
+            <textarea id="message" rows="5" placeholder="Loyihangiz haqida..." required></textarea>
+          </div>
+
+          <button class="send-btn magnetic" type="submit">
+            SEND MESSAGE
+            <span>↗</span>
+          </button>
+
+          <p id="formMessage"></p>
+
+        </form>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container footer-top">
+
+      <div class="footer-brand">
+        <div class="brand-vs">VS</div>
+        <h3>VALIJONOV<br>SOYIBJON</h3>
+      </div>
+
+      <div class="footer-big">
+        LET'S BUILD
+        <span>THE FUTURE.</span>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+
+      <p>
+        © <span id="year"></span> Valijonov Soyibjon.
+        All rights reserved.
+      </p>
+
+      <a href="#home">BACK TO TOP ↑</a>
+
+    </div>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
